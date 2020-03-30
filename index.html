@@ -6,16 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="dice.css">
     <script src="app.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body id="body" class="body">
     <div class="display">
         <span class="theme" title="Change the theme of the board" onclick="theme()">Change Theme</span>
+        <i onclick='mute()' class="fa fa-volume-up" aria-hidden="true"></i>
         <h1 id="dice" class="dice2">1</h1>
         <span id="play" title="Click here to generate random number" onclick="myfun()" >PLAY</span>
     </div>
     <audio id="myAudio">
-        <source src="dice.wav" type="audio/wav">
+        <source src="dice2.wav"  type="audio/wav">
         Your browser does not support the audio element.
       </audio>
 </body>

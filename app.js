@@ -11,6 +11,15 @@ function myfun(){
 function theme(){
         var element = document.getElementById("body");
         element.classList.toggle("body");
-        var element = document.getElementById("dice");
-        element.style.color="rgb(49, 48, 48)";
+
+}
+function mute(){
+    var aud = document.getElementById("myAudio");
+    console.log(aud.muted)
+    if (aud.muted){
+        aud.muted=false
+    }
+    else{
+        aud.muted=true
+    }
 }
