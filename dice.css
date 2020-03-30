@@ -92,6 +92,7 @@ span{
 }
 i{
     color:white;
+    position:absolute;
     text-shadow:2px 2px 10px #81bb03;
     background:#81bb03;
     font-size: 24px;
