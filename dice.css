@@ -1,0 +1,95 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: poppins;
+    background-color: rgb(247, 242, 242);
+}
+.body span{
+    box-shadow:2px 2px 20px black;
+
+}
+
+div{
+    min-height:100vh;
+    max-height:100vh;
+    width:100vw;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#dice {
+    font-size:20rem;
+    
+}
+span{
+    padding:1em 2em;
+    border-radius:2em;
+    border-radius:2em;
+    background-color:#81bb03;
+    box-shadow:2px 2px 20px rgba(0, 0, 0, 0.507);
+    text-shadow:2px 2px 20px rgba(0, 0, 0, 0.507);
+    color:white;
+    font-weight:600;
+    letter-spacing: 2px;
+    /* margin-top:2em; */
+
+}
+#play{
+    display: inline-block;
+    font-family:poppins;
+    font-weight:900;
+    font-size:4rem;
+    padding:1.4% 8%;;
+    background-color:#81bb03;
+    border:solid #81bb03 2px;
+    border-radius:2em;
+    color:white;
+    text-shadow:2px 2px 20px rgba(0, 0, 0, 0.507);
+    box-shadow:2px 2px 20px rgba(0, 0, 0, 0.507);
+    cursor: pointer;
+    /* pointer-events: none; */
+  
+
+}
+.dice2:not(.x1){
+    color:white;
+    transform:rotate(360deg) scale(0);
+    animation :xw .3s forwards;
+    /* transition:.3s; */
+}
+.body{
+    background:rgb(49, 48, 48);
+}
+.body input,#body span{
+    text-shadow:2px 2px 20px rgba(0, 0, 0, 0.507);
+    box-shadow:2px 2px 50px #81bb038a;
+    outline:none;
+}
+.x1{
+    transition:.3s;
+    color:white;
+    animation :x .3s forwards alternate;
+    
+}
+@keyframes xw{
+    0%{
+        transform: rotate(0deg) scale(0);
+    }
+    100%{
+        transform:rotate(720deg) scale(1);
+    }
+}
+@keyframes x{
+    0%{
+        transform: rotate(0deg) scale(0);
+    }
+    100%{
+        transform:rotate(720deg) scale(1);
+    }
+}
